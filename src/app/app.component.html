@@ -1,25 +1,27 @@
 <div class="container">
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-md-12">
       <div class="tabbable" id="tabs-693082">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active show" href="#tab1" data-toggle="tab">Section 1</a>
+            <a class="nav-link active" href="#tab1" data-toggle="tab">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tab2" data-toggle="tab">Section 2</a>
+            <a class="nav-link" href="#tab2" data-toggle="tab">MyServer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab3" data-toggle="tab">Users</a>
           </li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane active" id="panel-984032">
-            <p>
-              I'm in Section 1.
-            </p>
+          <div class="tab-pane active" id='tab1'>
+            <app-home></app-home>
           </div>
           <div class="tab-pane" id="tab2">
-            <p>
-              Howdy, I'm in Section 2.
-            </p>
+            <app-myserver></app-myserver>
+          </div>
+          <div class="tab-pane" id="tab3">
+            <app-users></app-users>
           </div>
         </div>
       </div>
